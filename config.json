@@ -1,0 +1,12 @@
+{
+  "interval_seconds": 30,
+  "timeout_seconds": 5,
+  "latency_warn_ms": 800,
+  "failures_before_incident": 3,
+  "targets": [
+    {"name": "Google (HTTPS)",   "type": "http", "url": "https://www.google.com"},
+    {"name": "GitHub (HTTPS)",   "type": "http", "url": "https://github.com"},
+    {"name": "Cloudflare DNS",   "type": "tcp",  "host": "1.1.1.1", "port": 53},
+    {"name": "Local web server", "type": "http", "url": "http://127.0.0.1:8000"}
+  ]
+}
